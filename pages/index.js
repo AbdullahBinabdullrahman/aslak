@@ -5,10 +5,10 @@ import PickView from "./view/pickUser";
 import AuthView from "./view/authView";
 import OptionsView from "./view/optionsView";
 import BoardView from "./view/BoardView";
+import "../app/globals.css";
 
 export default function Home() {
   const [state, setState] = useState("pick");
-
   const Views = () => {
     switch (state) {
       case "pick":

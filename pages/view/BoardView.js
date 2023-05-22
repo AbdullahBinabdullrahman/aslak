@@ -29,9 +29,10 @@ const BoardView = ({ setState }) => {
       </div>
 
       <div onClick={handleNextView} className="mx-auto mt-10">
-        {options.map((e) => {
+        {options.map((e, index) => {
           return (
             <div
+              key={index}
               onClick={() => alert(`نبدأ صناعه ${e}`)}
               className="items-center p-4 mb-2 text-center text-white transition-all border border-gray-300 rounded-md cursor-pointer hover:border-purple-950 hover:text-purple-950 "
             >
